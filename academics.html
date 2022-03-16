@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    h1{
+        text-align: center;
+        margin-top:5%;
+    }
+    h2{
+      margin-top:2%;
+      margin-bottom:2%;
+    }
+    .hr{
+        height:2px;
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+        background-color: black;
+    }
+    .respond{
+      color: red;
+
+    }
+    .responded{
+      color: green;
+    }
+</style>
+<body>
+    
+</body>
+</html> <h1 class="heading-primary heading-underline"><i class="fa fa-hand-o-right " aria-hidden="true"></i>Complaint portal</h1>
+<div class="hr"></div>
+
+
+<!--responded Modal -->
+<div class="modal fade" id="responded" tabindex="-1" aria-labelledby="respondedLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="responded">Academics</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-thin fa-xmark" aria-hidden="true"></i></button>
+      </div>
+      <div class="modal-body">
+<b class="responded">You have already responded!</b>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--respond Modal -->
+<div class="modal fade" id="respond" tabindex="-1" aria-labelledby="respondLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="respondLabel">Academics</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label>Add your response here:</label>
+            <textarea rows="10" cols="60" class="form-control"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2>Complaints Raised</h2>         
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>s.no</th>
+          <th>Complaint</th>
+          <th>Solved/Unsolved</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Laptop issue</td>
+          <td data-bs-toggle="modal" data-bs-target="#responded" class="responded">Responded</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>There is delay in food delivery in the mess</td>
+          <td  data-bs-toggle="modal" data-bs-target="#respond" class="respond">Respond</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Uniforms for this acdemic year are not yet issued</td>
+          <td  data-bs-toggle="modal" data-bs-target="#respond"class="respond">Respond</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div> 
